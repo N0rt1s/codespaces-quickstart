@@ -1,0 +1,42 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_symptoms
+  - ask_causes
+  - ask_prevention
+  - ask_treatment
+  - goodbye
+
+actions:
+  - action_find_disease
+  - action_find_cause
+  - action_find_prevention
+  - action_find_treatment
+
+responses:
+  utter_greet:
+    - text: "Hello! I can help you with information about eye diseases. Tell me your symptoms, and I'll assist you!"
+  utter_goodbye:
+    - text: "Goodbye! Take care of your eyes."
+  utter_ask_symptoms:
+    - text: "Please tell me your symptoms, and I'll try to identify the disease."
+  utter_no_match:
+    - text: "I'm sorry, I couldn't find a match for your symptoms. Can you provide more details?"
+  utter_out_of_scope:
+    - text: "I'm here to assist you with queries about eye diseases. Please ask about symptoms, causes, prevention, or treatment of eye diseases."
+
+  utter_default:
+    - text: "I didn't understand that. Could you rephrase or ask about eye diseases?"
+
+slots:
+  symptoms:
+    type: list
+    influence_conversation: true
+    mappings:
+      - type: from_text
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

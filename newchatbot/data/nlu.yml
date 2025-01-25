@@ -1,0 +1,33 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hello
+      - Hi
+      - Hey there
+
+  - intent: ask_symptoms
+    examples: |
+      - I have blurry vision
+      - My side vision is disappearing
+      - I can't see in the dark
+      - My eyes are itching
+
+  - intent: ask_causes
+    examples: |
+      - What causes glaucoma?
+      - Why does cataract happen?
+      - Tell me the reason for refractive errors
+
+  - intent: ask_prevention
+    examples: |
+      - How can I prevent glaucoma?
+      - Preventive measures for cataracts?
+      - What can I do to avoid eye problems?
+
+  - intent: ask_treatment
+    examples: |
+      - How to treat glaucoma?
+      - What's the treatment for cataracts?
+      - Can refractive errors be corrected?

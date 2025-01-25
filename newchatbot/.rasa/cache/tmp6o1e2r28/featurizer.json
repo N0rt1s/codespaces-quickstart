@@ -1,0 +1,63 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "ask_causes": 0,
+        "ask_prevention": 1,
+        "ask_symptoms": 2,
+        "ask_treatment": 3,
+        "back": 4,
+        "goodbye": 5,
+        "greet": 6,
+        "nlu_fallback": 7,
+        "out_of_scope": 8,
+        "restart": 9,
+        "session_end": 10,
+        "session_start": 11,
+        "silence_timeout": 12
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "action_send_text": 11,
+        "...": 12,
+        "action_extract_slots": 13,
+        "action_cancel_flow": 14,
+        "action_correct_flow_slot": 15,
+        "action_clarify_flows": 16,
+        "action_run_slot_rejections": 17,
+        "action_clean_stack": 18,
+        "action_trigger_search": 19,
+        "action_trigger_chitchat": 20,
+        "action_reset_routing": 21,
+        "action_hangup": 22,
+        "action_repeat_bot_messages": 23,
+        "action_find_disease": 24,
+        "action_find_cause": 25,
+        "action_find_prevention": 26,
+        "action_find_treatment": 27,
+        "utter_ask_symptoms": 28,
+        "utter_goodbye": 29,
+        "utter_greet": 30,
+        "utter_no_match": 31
+      },
+      "entities": {},
+      "slots": {},
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

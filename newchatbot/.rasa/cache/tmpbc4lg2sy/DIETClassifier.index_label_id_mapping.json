@@ -1,0 +1,9 @@
+{
+  "0": "ask_causes",
+  "1": "ask_detection",
+  "2": "ask_eye_disease_info",
+  "3": "ask_prevention",
+  "4": "ask_symptoms",
+  "5": "goodbye",
+  "6": "greet"
+}

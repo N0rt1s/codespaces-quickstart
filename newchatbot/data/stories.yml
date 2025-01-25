@@ -1,0 +1,29 @@
+version: "3.1"
+
+stories:
+  - story: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: Collect symptoms
+    steps:
+      - intent: ask_symptoms
+      - action: action_find_disease
+      - slot_was_set:
+          - symptoms: ["user-provided-symptom"]
+
+  - story: Ask for causes
+    steps:
+      - intent: ask_causes
+      - action: action_find_cause
+
+  - story: Ask for prevention
+    steps:
+      - intent: ask_prevention
+      - action: action_find_prevention
+
+  - story: Ask for treatment
+    steps:
+      - intent: ask_treatment
+      - action: action_find_treatment
